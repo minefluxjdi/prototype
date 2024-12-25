@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Devil <3 </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #ff9999;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #45a049;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be Mine?</h1>
+        <p>Click "Yes" to see my heartfelt words for you.</p>
+        <div class="button-container">
+            <button class="yes" onclick="showMessage()">Yes</button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.innerHTML = `<p>Riya, tere bina zindagi adhoori lagti hai,<br>
+            Har subah, har shaam bas tuhi zaruri lagti hai.<br>
+            Teri hasi, jaise sitaron ki roshni ho,<br>
+            Tera saath, jaise khushboo se bhari baag ki basi ho.<br><br>
+
+            Har baat teri, dil ke kareeb lagti hai,<br>
+            Teri khamoshi bhi ek jeene ki wajah lagti hai.<br>
+            Tujhe dekhoon toh duniya thami thami si lage,<br>
+            Tere saath rahoon, toh har raat suhani si lage.<br><br>
+
+            Dilon ke is rishte ko ek naam dena chahta hoon,<br>
+            Apni duniya ko tere naam se sajana chahta hoon.<br>
+            Himmat karke aaj dil ki baat kehta hoon,<br>
+            Riya, kya tu meri girlfriend banegi, yeh puchhta hoon?</p>`;
+        }
+    </script>
+</body>
+</html>
